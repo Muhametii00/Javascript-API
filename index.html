@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Kursi i JavaScript</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="add-remove">
+      <div class="remove-button">
+        <div id="remove-item" class="add_button__remove">
+          <img src="./assets/icons/remove.svg" style="width:15px" alt="Remove Item" />
+        </div>
+        <span>Reset All</span>
+      </div>
+      <div class="add_button">
+        <span>Add New</span>
+        <div class="add_button__circle">
+          <img src="./assets/icons/ellipse.svg" style="width: 55px" alt="Add New Icon" />
+        </div>
+      </div>
+    </div>
+
+
+    <section class="products-section" id="products-section">
+
+    </section>
+  </div>
+
+  <aside class="add_modal" id="add-modal">
+    <div class="add_modal__wrapper">
+      <span id="close-modal" class="add_modal__close">
+        <img src="./assets/icons/remove.svg" />
+      </span>
+      <form class="add_modal__form" id="add-form">
+        <h5>Add New</h5>
+
+        <input type="text" name="title" placeholder="Title" />
+        <input type="text" name="price" placeholder="Price" />
+        <textarea name="description" id="description" placeholder="Description">
+          </textarea>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </aside>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
